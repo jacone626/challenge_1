@@ -8,24 +8,24 @@ body {
     background-color: #d9dcd6;
 }
 
-.header {
+header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
 /* Updated the grey seo from a class selector to id for simpler code */
-#seo {
+h1 span {
     color: #d9dcd6;
 }
 
-.header div {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -33,12 +33,10 @@ body {
     font-size: 20px;
 }
 
-/* Believe I can remove this*/
-.header div ul {
-    list-style-type: none;
-}
+/* Removed the "list style type: none" under the ul element since it was the default and made no changes*/
 
-.header div ul li {
+/*Updated to just li since there are no other lists in this file*/
+li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -48,7 +46,7 @@ a {
     text-decoration: none;
 }
 
-.hero {
+figure {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -57,8 +55,8 @@ a {
     background-position: center;
 }
 
-/* Moved to match the html flow*/
-.content {
+/* Changed from div to "main" element and removed class definer*/
+main {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
@@ -74,19 +72,17 @@ a {
     color: #ffffff;
 }
 
-/* Consolidated image heights all under this content img selector */
-.content img {
+/* Consolidated image heights all under this main img selector */
+main img {
     max-height: 200px;
     float: left;
     margin-right: 25px;
 }
 
-/* Removed the class float-left and added its properties under .content img */
+/* Removed the class float-left and added its properties under section img */
 
 /* Consolidated into one since they all have the same properties */
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2 {
+.offering h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -102,7 +98,8 @@ p {
     margin-left: 25px;
 }
 
-.benefits {
+/* Changed element to aside and removed the class definers "benefits"*/
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -132,13 +129,13 @@ p {
     max-width: 150px;
 }
 
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 20px;
 }
